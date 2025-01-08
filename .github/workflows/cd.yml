@@ -25,4 +25,4 @@ jobs:
         uses: google-github-actions/setup-gcloud@v2
 
       - name: Deploy
-        uses: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-boot-dev/notely-ar-repo/notely:latest .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-boot-dev/notely-ar-repo/notely:latest .
